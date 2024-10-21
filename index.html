@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Welcome to the SDG Quiz Platform</h1>
+            <p class="intro-text">Test your knowledge about the United Nations Sustainable Development Goals (SDGs) with this fun and informative quiz! Answer the questions below to see how well you understand the global goals. Good luck!</p>
+        </header>
+        <section id="quiz-box">
+            <!-- Quiz questions will be injected here -->
+        </section>
+        <div class="navigation">
+            <button id="prev" onclick="prevQuestion()">Previous</button>
+            <button id="next" onclick="nextQuestion()">Next</button>
+            <button id="submit" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SDG Quiz Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
