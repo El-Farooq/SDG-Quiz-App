@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDG Quiz Game</title>
+    <title>SDG Quiz Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="quiz-container">
+    <div class="container">
         <header>
-            <h1>Welcome to the SDG Quiz Platform</h1>
-            <p class="intro-text">Test your knowledge about the United Nations Sustainable Development Goals (SDGs) with this fun and informative quiz! Answer the questions below to see how well you understand the global goals. Good luck!</p>
+            <h1 id="welcome-message"> </h1>
+            <p class="intro-text">Test your knowledge on Sustainable Development Goals. Begin the quiz below!</p>
         </header>
-        <section id="quiz-box">
-            <!-- Quiz questions will be injected here -->
-        </section>
-        <div class="navigation">
-            <button id="prev" onclick="prevQuestion()">Previous</button>
-            <button id="next" onclick="nextQuestion()">Next</button>
-            <button id="submit" onclick="submitQuiz()">Submit</button>
+        <div class="quiz-container">
+            <div class="question-box">
+                <p id="question"></p>
+            </div>
+            <div class="options-box">
+                <ul id="options">
+                    <!-- Options will be injected here from js -->
+                </ul>
+            </div>
         </div>
-        <div id="result"></div>
+        <div class="nav-buttons">
+            <button id="prevBtn" onclick="prevQuestion()">&lt; Previous Question</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next Question &gt;</button>
+        </div>
     </div>
-
     <footer>
         <p>&copy; 2024 SDG Quiz Platform. All rights reserved.</p>
     </footer>
