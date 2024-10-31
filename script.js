@@ -144,6 +144,118 @@ const questions = [
                   "Reduce waste generation"],
         answer: 0
     },
+    {
+        question: "What does SDG 10 aim to reduce by 2030?",
+        options: ["Global climate change impacts", 
+                  "Water scarcity in developing countries", 
+                  "The income disparity between rich and poor within countries", 
+                  "The global literacy gap"],
+        answer: 2
+    },
+    {
+        question: "SDG 8 promotes decent work and economic growth. What is one of its targets?",
+        options: ["Ensure universal access to education", 
+                  "Provide universal healthcare", 
+                  "End global deforestation", 
+                  "Achieve full and productive employment for all"],
+        answer: 3
+    },
+    {
+        question: "What is one of the primary objectives of SDG 7?",
+        options: ["Ensure universal access to affordable, reliable, and modern energy services", 
+                  "Reduce food waste globally", 
+                  "Eliminate all forms of pollution", 
+                  "Reduce deforestation by 50%"],
+        answer: 0
+    },
+    {
+        question: "SDG 11 aims to make cities inclusive, safe, and sustainable. What is one of its key goals by 2030?",
+        options: ["End all forms of violence", 
+                  "Ensure access to affordable housing for all", 
+                  "Ensure universal healthcare access", 
+                  "Achieve gender equality"],
+        answer: 1
+    },
+    {
+        question: "According to SDG 8, what is the targeted annual growth rate for GDP in least developed countries by 2030?",
+        options: ["7%", 
+                  "20%", 
+                  "15%", 
+                  "50%"],
+        answer: 0
+    },
+    {
+        question: "What is the target of SDG 12 on Responsible Consumption and Production?",
+        options: ["Promote lifelong learning opportunities", 
+                  "Provide universal access to education", 
+                  "End extreme poverty", 
+                  "Substantially reduce waste generation by 2030"],
+        answer: 3
+    },
+    {
+        question: "One target of SDG 3 is to end preventable deaths of children under five years old. By which year is this goal set?",
+        options: ["2028", 
+                  "2032", 
+                  "2030", 
+                  "2040"],
+        answer: 2
+    },
+    {
+        question: "SDG 13 focuses on urgent action to combat climate change. Which of these is a key focus of this goal?",
+        options: ["Promote responsible consumption", 
+                  "Strengthen resilience to climate-related hazards", 
+                  "Achieve universal healthcare", 
+                  "Ensure universal access to modern energy"],
+        answer: 1
+    },
+    {
+        question: "What is one of the primary focuses of SDG 5 regarding women’s empowerment?",
+        options: ["End child marriage and forced marriages", 
+                  "Increase access to education", 
+                  "Promote gender balance in energy sector", 
+                  "Ensure access to clean drinking water"],
+        answer: 0
+    },
+    {
+        question: "What is the primary aim of SDG 14?",
+        options: ["End hunger and malnutrition", 
+                  "Conserve and sustainably use the oceans, seas, and marine resources", 
+                  "Ensure access to affordable healthcare", 
+                  "Promote gender equality"],
+        answer: 1
+    },
+    {
+        question: "What is the global literacy rate target by 2030 according to SDG 4?",
+        options: ["85%", 
+                  "60%", 
+                  "100%", 
+                  "50%"],
+        answer: 2
+    },
+    {
+        question: "What does SDG 16 aim to promote?",
+        options: ["Access to affordable energy", 
+                  "Sustainable economic growth", 
+                  "Lifelong learning opportunities for all", 
+                  "Peaceful and inclusive societies"],
+        answer: 3
+    },
+    {
+        question: "According to SDG 1, how much money per day defines extreme poverty?",
+        options: ["Less than $1.25", 
+                  "Less than $5.50", 
+                  "Less than $3.00", 
+                  "Less than $10.00"],
+        answer: 0
+    },
+    {
+        question: "SDG 17 emphasizes strengthening partnerships. Which of the following is one of its key targets?",
+        options: ["Provide universal access to basic education", 
+                  "Increase domestic resource mobilization in developing countries", 
+                  "Eliminate all forms of discrimination against women", 
+                  "Reduce youth unemployment"],
+        answer: 1
+    },
 ];
 
 let currentQuestionIndex = 0;
