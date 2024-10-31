@@ -9,10 +9,3 @@ Perfect Score: A congratulatory message if they answered all the questions corre
 Good Score: An encouraging message if they got more than half right.
 Low Score: A motivating message if they scored less than half.
 The design will adapt to different devices (responsive for mobile, tablet, and desktop screens).
-
- if (score === quizQuestions.length) {
-        endMessage = 'Fantastic! You scored a perfect ' + score + '/' + quizQuestions.length + '! You really know your SDGs!';
-    } else if (score > quizQuestions.length / 2) {
-        endMessage = 'Great job! You scored ' + score + '/' + quizQuestions.length + '. You have a good grasp on the SDGs, keep learning more!';
-    } else {
-        endMessage = 'You scored ' + score + '/' + quizQuestions.length + '. Don’t worry, keep learning about the SDGs and you’ll do better next time!';
