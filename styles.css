@@ -45,10 +45,23 @@ header {
 }
 
 .question-box {
+    text-align: center;
     width: 45%;
     padding: 20px;
     background-color: #e9ecef;
     border-radius: 10px;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 15px; /* Adds space between question text and image */
+}
+
+.question-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Adjust to preferred size */
+    max-height: 200px;
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
 }
 
 .options-box {
@@ -145,9 +158,13 @@ footer {
 @media (max-width: 780px) {
     /* Adjust the welcome message */
     #welcome-message {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding: 15px;
         text-align: center;
+    }
+
+    .intro-text{
+        font-size: 1.2rem;
     }
 
     /* Adjust quiz container layout */
@@ -164,11 +181,12 @@ footer {
         padding: 10px;
         font-size: 1.2rem;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     /* Options container adjustments */
     .options-box {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -195,6 +213,19 @@ footer {
         font-size: 1rem;
         padding: 10px;
         width: 48%; /* Ensures buttons stay separate */
+    }
+
+    .score-message {
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+        margin-bottom: 10px; /* Adds space between the message and the score */
+        align-items: center;
+    }
+    
+    .score-text {
+        font-size: 1.54rem;
+        color: #333;
+        align-items: center;
     }
 
     /* Footer adjustments */
@@ -257,6 +288,10 @@ footer {
         text-align: center;
     }
 
+    .question-image {
+        max-width: 200px;
+    }
+
     /* Options container adjustments */
     .options-box {
         width: 100%;
@@ -293,6 +328,19 @@ footer {
 
     #prevBtn, #nextBtn {
         font-size: 0.9rem;
+    }
+
+    .score-message {
+        font-size: 1.1;
+        padding-bottom: 8px;
+        margin-bottom: 10px; /* Adds space between the message and the score */
+        align-items: center;
+    }
+    
+    .score-text {
+        font-size: 1.18;
+        color: #333;
+        align-items: center;
     }
 
     /* Footer adjustments */
