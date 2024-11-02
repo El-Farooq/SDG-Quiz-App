@@ -45,10 +45,23 @@ header {
 }
 
 .question-box {
+    text-align: center;
     width: 45%;
     padding: 20px;
     background-color: #e9ecef;
     border-radius: 10px;
+}
+
+#question {
+    font-size: 18px;
+    margin-bottom: 15px; /* Adds space between question text and image */
+}
+
+.question-image {
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Adjust to preferred size */
+    max-height: 200px;
+    border-radius: 8px; /* Optional: Rounds the corners of the image */
 }
 
 .options-box {
@@ -141,6 +154,89 @@ footer {
     margin: 0 auto;
 }
 
+/* Media query for screens 780px and below */
+@media (max-width: 780px) {
+    /* Adjust the welcome message */
+    #welcome-message {
+        font-size: 1.6rem;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .intro-text{
+        font-size: 1.2rem;
+    }
+
+    /* Adjust quiz container layout */
+    .quiz-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Style the question text */
+    .question-box {
+        width: 90%;
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Options container adjustments */
+    .options-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Style option buttons */
+    #options {
+        font-size: 1rem;
+        padding: 12px;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Adjust navigation buttons */
+    .nav-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .nav-buttons button {
+        font-size: 1rem;
+        padding: 10px;
+        width: 48%; /* Ensures buttons stay separate */
+    }
+
+    .score-message {
+        font-size: 1.2rem;
+        padding-bottom: 8px;
+        margin-bottom: 10px; /* Adds space between the message and the score */
+        align-items: center;
+    }
+    
+    .score-text {
+        font-size: 1.54rem;
+        color: #333;
+        align-items: center;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.9rem;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
 /* Tablet */
 @media (max-width: 768px) {
     .container {
@@ -158,5 +254,99 @@ footer {
     }
     .result-message, .score {
         font-size: 1rem; /* Further adjust for mobile */
+    }
+}
+
+/* Media query for screens 480px and below */
+@media (max-width: 480px) {
+    /* Adjust the welcome message */
+    #welcome-message {
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .intro-text{
+        font-size: 0.98rem;
+    }
+
+    /* Quiz container layout adjustments */
+    .quiz-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Question container adjustments */
+    .question-box {
+        width: 100%;
+        max-width: 95%;
+        padding: 10px;
+        font-size: 0.9rem;
+        margin-bottom: 10px; /* Adds space below question container */
+        text-align: center;
+    }
+
+    .question-image {
+        max-width: 200px;
+    }
+
+    /* Options container adjustments */
+    .options-box {
+        width: 100%;
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        
+    }
+
+    /* Option button adjustments */
+    #options {
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 100%; /* Makes sure options fill the container width */
+        text-align: left; /* Keeps text aligned within the container */
+        box-sizing: border-box; /* Prevents padding from expanding the button */
+    }
+
+    /* Navigation buttons adjustments */
+    .nav-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .nav-buttons button {
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 48%; /* Keeps space between buttons */
+    }
+
+    #prevBtn, #nextBtn {
+        font-size: 0.9rem;
+    }
+
+    .score-message {
+        font-size: 1.1;
+        padding-bottom: 8px;
+        margin-bottom: 10px; /* Adds space between the message and the score */
+        align-items: center;
+    }
+    
+    .score-text {
+        font-size: 1.18;
+        color: #333;
+        align-items: center;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.9rem;
+        padding: 10px;
+        text-align: center;
     }
 }

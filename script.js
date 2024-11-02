@@ -259,7 +259,7 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
-let userAnswers = [];
+let userAnswers = new Array(questions.length).fill(null);
 
 function showQuestion() {
     const questionElement = document.getElementById("question");
@@ -300,7 +300,7 @@ function nextQuestion() {
         currentQuestionIndex++;
         showQuestion();
     } else {
-        showResults();
+        checkAnswersBeforeShowingResults();
     }
 }
 
@@ -311,6 +311,14 @@ function prevQuestion() {
     }
 }
 
+function checkAnswersBeforeShowingResults() {
+    const unanswered = userAnswers.includes(null);
+    if (unanswered) {
+        alert("Please answer all questions before submitting the quiz.");
+        return;
+    }
+    showResults();
+}
 
 // Function to show the quiz results
 function showResults() {
